@@ -87,17 +87,7 @@ function Trending() {
         })}
         <span>{trend}</span>
 
-        {/* {
-         featured.map((index,id) => {
-            return (
-                <div className=''>
-                {id} {index}
-                    <p></p>
-                </div>
-            )
-        })
-     }
-      */}
+       
       </div>
     </div>
   );

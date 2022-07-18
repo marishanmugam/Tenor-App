@@ -1,0 +1,19 @@
+.featured-container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+.featured-content {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    margin-top:15px;
+    position: absolute;
+}
+
+.image-container {
+    background-color:gold;
+
+}

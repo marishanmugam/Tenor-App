@@ -16,3 +16,7 @@
   height: 17px;
   margin: 10px 0;
 }
+
+.featured {
+  position: absolute;
+}

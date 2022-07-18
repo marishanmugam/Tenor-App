@@ -2,6 +2,7 @@
     width: 100%;
     margin: 0;
     top: 0;
+
 }
 
 .trending-container {
@@ -15,7 +16,8 @@
     width: 60%;
     margin: auto;
     display: flex;
-    background: fixed;overflow: hidden;
+  
+    overflow: hidden;
    
 }
 
@@ -30,17 +32,17 @@
     height: 90px;
     border-radius: 5px;
     display: inline-block;
+  
 
 }
 
 .trending-main .prev,.next {
    
     cursor: pointer;
-    position: absolute;
     top: 184px;
     opacity: 0.5;
     font-size: 32px;
-    
+    position: absolute;
 }
 
 .trending-main .prev:hover,.next:hover {
@@ -51,6 +53,8 @@
    
     left: 18%;
     display: flex;
+    
+  
 }
 
 .trending-main .next  {

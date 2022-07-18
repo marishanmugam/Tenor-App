@@ -2,6 +2,7 @@ import logo from "./images/tenor-logo.svg";
 import "./App.css";
 import Search from "./Search.js";
 import Trending from "./Trending";
+import Featured from "./Featured";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
 
       <div className="trending">
         <Trending />
+      </div>
+
+      <div>
+      <Featured className='featured'/>
       </div>
     </div>
   );
