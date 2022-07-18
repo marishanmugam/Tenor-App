@@ -8,12 +8,27 @@
 .featured-content {
     width: 60%;
     margin: auto;
-    display: flex;
+    display: block;
     margin-top:15px;
-    position: absolute;
+    
+}
+.images {
+    width: 100%;
+    margin: auto;
+    display: flex;
+
 }
 
 .image-container {
-    background-color:gold;
+   -webkit-column-count: 4;
+   -moz-column-count: 4;
+   column-count: 4;
+   -webkit-column-width: 25%;
+   -moz-column-width: 25%;
+   column-width: 25%;
+   padding: 10px 20px;
+}
+.images img{
+    border-radius: 6px;
 
 }
