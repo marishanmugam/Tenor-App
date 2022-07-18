@@ -9,7 +9,8 @@ function Search() {
 
   useEffect(() => {
     const setFixed = () => {
-      if (window.scrollY >= 25) setFix(true);
+      if (window.scrollY >= 25) 
+      setFix(true);
       else setFix(false);
     };
 
