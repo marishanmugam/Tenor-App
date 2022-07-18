@@ -13,7 +13,7 @@ function Featured() {
       )
       .then((res) => {
         setFeatured(res.data.results);
-        console.log(setFeatured);
+
       });
   };
 
@@ -31,7 +31,7 @@ function Featured() {
           {featured.map((e) => {
             return (
               <div className="images" key={e.id}>
-                <img src={e.media_formats.gif.url} style={{width :'100%'}}></img>
+                <img src={e.media_formats.gif.url} ></img>
              
               </div>
             );
