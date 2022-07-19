@@ -42,3 +42,26 @@ input[type="text"] {
   margin: -35px 40px;
   float: right;
 }
+
+
+.images {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  
+  padding: 5px 0;
+}
+
+.image-container {
+  column-count: 4;
+  column-width: 25%;
+  column-gap: 20px;
+
+}
+.images img {
+  border-radius: 3px;
+  width: 100%;
+  background-position: 50%;
+  background-size: cover;
+  
+}
