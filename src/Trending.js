@@ -11,7 +11,7 @@ function Trending() {
   const [index, setIndex] = useState(0);
 
   var noOfSlide = ser.length;
-  console.log(noOfSlide);
+
 
   const fetchData = () => {
     axios
@@ -42,7 +42,7 @@ function Trending() {
         setSer(res1.data.results);
       });
   };
-  console.log(ser);
+
   useEffect(() => {
     fetchData();
     searchData();
