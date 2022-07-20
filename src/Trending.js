@@ -35,7 +35,6 @@ function Trending() {
   const searchData = () => {
     axios
       .get(
-        `https://tenor.googleapis.com/v2/search?key=AIzaSyDTHKhc9ujnqiwS2M29T_p6cTVSq9N0a2c&q=${featured}`
       )
 
       .then((res1) => {
@@ -86,8 +85,6 @@ function Trending() {
           );
         })}
         <span>{trend}</span>
-
-       
       </div>
     </div>
   );

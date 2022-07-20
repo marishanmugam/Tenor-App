@@ -6,8 +6,7 @@ import { useEffect } from "react";
 function Featured() {
   const [featured, setFeatured] = useState([]);
   const [nextPos, setNextPos] = useState('');
-  const [loading,setLoading ] = useState(true)
-  const [page,setPage] = useState(1)
+
 
  
   useEffect(() => {
@@ -23,7 +22,7 @@ function Featured() {
           res.data.results.map((res) => newData.push(res));
           setFeatured((oldData) => [...oldData, ...newData]);
           setNextPos(res.data.next);
-          setLoading(false);
+          
         });
     };
 
@@ -35,7 +34,6 @@ function Featured() {
   
       if (scrollHeight - scrollTop <= clientHeight * 1) {
         featuredData();
-        setPage(page+1)
         
       }
     };
