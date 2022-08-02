@@ -1,0 +1,34 @@
+.featured-container {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+}
+
+.featured-content {
+  width: 60%;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+.images {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  
+  padding: 5px 0;
+}
+
+.image-container {
+  column-count: 4;
+  column-width: 25%;
+  column-gap: 20px;
+
+}
+.images img {
+  border-radius: 3px;
+  width: 100%;
+  background-position: 50%;
+  background-size: cover;
+  
+}

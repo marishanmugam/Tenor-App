@@ -6,7 +6,8 @@ import { useEffect } from "react";
 function Featured() {
   const [featured, setFeatured] = useState([]);
   const [nextPos, setNextPos] = useState([]);
-  // const [newData,setNewData] = useState([]);
+  const [page, setPage] = useState(1);
+  const [newData,setNewData] = useState([]);
   const featuredData = async () => {
     axios
       .get(
@@ -32,7 +33,8 @@ function Featured() {
         let resu = res.data.results;
         // setFeatured((featured) => [...featured , res.data.results] );
         // setFeatured(featured => featured.concat(resu));
-        setFeatured(featured =>featured.concat(resu))
+        setNewData(featured => featured.concat(resu));
+      
         setNextPos(res.data.next);
         console.log(nextPos);
       });
@@ -70,13 +72,13 @@ function Featured() {
             );
           })}
 
-            {/* {newData.map((e, index) => {
+{newData.map((e, index) => {
             return (
               <div className="images" key={index.id}>
                 <img src={e.media_formats.gif.url} key={index.id}></img>
               </div>
             );
-          })} */}
+          })}
         </div>
       </div>
     </div>

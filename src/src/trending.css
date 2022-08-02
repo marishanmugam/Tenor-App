@@ -1,0 +1,65 @@
+.trending-main {
+    width: 100%;
+    margin: 0;
+    top: 0;
+
+}
+
+.trending-container {
+    display: flex;
+    width: 60%;
+    margin: auto ;
+    margin-top: 2px;
+}
+
+.trend-container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+  
+    overflow: hidden;
+   
+}
+
+.trend {
+    width: 100%;
+    margin-left: -0px;
+    display: inline-block;
+    margin-right: 28px;
+}
+.trend-images img {
+    width: 150px;
+    height: 90px;
+    border-radius: 5px;
+    display: inline-block;
+  
+
+}
+
+.trending-main .prev,.next {
+   
+    cursor: pointer;
+    top: 184px;
+    opacity: 0.5;
+    font-size: 32px;
+    position: absolute;
+}
+
+.trending-main .prev:hover,.next:hover {
+    opacity: 1;
+}
+
+.trending-main .prev {
+   
+    left: 18%;
+    display: flex;
+    
+  
+}
+
+.trending-main .next  {
+    
+    right: 18%;
+    display: flex;
+    float: right;  
+}

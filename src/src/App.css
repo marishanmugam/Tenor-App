@@ -1,0 +1,22 @@
+.head {
+  width: 100%;
+  margin: auto;
+}
+
+.head-container  {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+
+.head-container img {
+  
+  display: block;
+  width: 60px;
+  height: 17px;
+  margin: 10px 0;
+}
+
+.featured {
+  position: absolute;
+}
